@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-modern-intent",
+  "version": "1.0.0",
+  "description": "A modern Intent plugin for Cordova compatible with Android 14.x",
+  "cordova": {
+    "id": "cordova-plugin-modern-intent",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wizzo-dev/cordova-plugin-modern-intent.git"
+  },
+  "keywords": [
+    "cordova",
+    "intent",
+    "android",
+    "modern",
+    "ecosystem:cordova"
+  ],
+  "author": "Wizzo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wizzo-dev/cordova-plugin-modern-intent/issues"
+  },
+  "homepage": "https://github.com/wizzo-dev/cordova-plugin-modern-intent#readme",
+  "engines": {
+    "cordovaDependencies": {
+      ">=12.0.0": {
+        "cordova-android": ">=14.0.0"
+      }
+    }
+  }
+} 

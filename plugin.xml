@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-modern-intent"
+        version="1.0.0">
+    
+    <name>Modern Intent Plugin</name>
+    <description>A modern Intent plugin for Cordova compatible with Android 14.x</description>
+    <license>MIT</license>
+    <keywords>cordova,intent,android,modern</keywords>
+    
+    <engines>
+        <engine name="cordova" version=">=12.0.0" />
+        <engine name="cordova-android" version=">=14.0.0" />
+    </engines>
+    
+    <platform name="android">
+        <js-module src="www/ModernIntent.js" name="ModernIntent">
+            <clobbers target="cordova.plugins.ModernIntent" />
+        </js-module>
+        
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ModernIntent">
+                <param name="android-package" value="com.wizzo.plugins.ModernIntent" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/ModernIntent.java" target-dir="src/com/wizzo/plugins" />
+    </platform>
+</plugin> 
